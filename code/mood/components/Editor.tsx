@@ -40,7 +40,7 @@ const Editor = ({entry}) => {
                 <div>
                     <ul>
                         { analysisData.map(item => (
-                            <li className=" px-2 py-4 flex items-center justify-between border-b border-t border-black/10">
+                            <li className=" px-2 py-4 flex items-center justify-between border-b border-t border-black/10" key={item.name}>
                                 <span className="text-lg font-semibold">{item.name}</span>
                                 <span>{item.value}</span>
                             </li>
